@@ -41,12 +41,7 @@ public class TC3_JsonExternaljsonFinePost {
 		.body(BodyData)
 		.when()
 		.post("http://localhost:3000/APIStudentsList");
-		System.out.println("status code is "+rs.statusCode());
-		
-		
-		
-		
-		
+		System.out.println("status code is "+rs.statusCode());		
 
 	}
 
