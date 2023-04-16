@@ -41,8 +41,10 @@ public class TC1_Get {
 		}
 
 //Extract all the key value of an object	
-		
-		JSONObject O= js.getJSONObject(14);
+
+	for (int i=0; i<js.length();i++)
+	{
+		JSONObject O= js.getJSONObject(i);
 	System.out.println("Extract all the key value of an object " + O.keySet());
 	
 	
@@ -50,6 +52,7 @@ public class TC1_Get {
 	for(String key:ALLKey)
 	{
 System.out.println("Extract all the key value of an object " + key +"=" + O.get(key));
+	}
 	}
 			
 	}
